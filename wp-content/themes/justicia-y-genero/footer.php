@@ -9,9 +9,12 @@
 	<?php do_action('foundationPress_layout_end'); ?>
 	</div>
 </div>
+</div><!--fin container -->
 <!--fixed search -->
-<aside id="buscador" class="desktop" data-no-touch="" data-track-id="">
+<aside id="buscador" class="desktop">
+	<div class="caja-deck" data-track-id="">
 	Busca la sentencia
+	</div>
 </aside>
 <?php wp_footer(); ?>
 <?php do_action('foundationPress_before_closing_body'); ?>
