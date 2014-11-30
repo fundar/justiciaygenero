@@ -30,3 +30,19 @@ License URI:        http://www.opensource.org/licenses/mit-license.php
   you could just enqueue this file (style.css) to the header and add your styles in this file
 
 ---------------------------------------------------------------------------- */
+ 
+ /** footer **/
+ 
+#buscador {
+    background: none repeat scroll 0 0 #eee;
+    bottom: 0;
+    height: 55px;
+    left: 0;
+    position: fixed;
+    transition: width 500ms cubic-bezier(0.19, 1, 0.22, 1) 300ms;
+    width: 100%;
+    z-index: 10;
+}
+.desktop {
+    display: block !important;
+}

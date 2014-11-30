@@ -9,6 +9,10 @@
 	<?php do_action('foundationPress_layout_end'); ?>
 	</div>
 </div>
+<!--fixed search -->
+<aside id="buscador" class="desktop" data-no-touch="" data-track-id="">
+	Busca la sentencia
+</aside>
 <?php wp_footer(); ?>
 <?php do_action('foundationPress_before_closing_body'); ?>
 </body>
