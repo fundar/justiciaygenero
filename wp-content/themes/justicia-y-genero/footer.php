@@ -13,7 +13,7 @@
 <!--fixed search -->
 <aside id="buscador" class="desktop">
 	<div class="caja-deck" data-track-id="">
-	Busca la sentencia
+	<h3 class="buscar-iniciativa">Busca la sentencia</h3>
 	</div>
 </aside>
 <?php wp_footer(); ?>

@@ -8,9 +8,8 @@ Author URI:         http://olefredrik.com/
 License:            MIT License
 License URI:        http://www.opensource.org/licenses/mit-license.php
 */
- 
- @import "fonts/stylesheet.css";
- 
+
+@import url("fonts/stylesheet.css");
 
 #container {
     background: none repeat scroll 0 0 #fff;
@@ -25,13 +24,11 @@ License URI:        http://www.opensource.org/licenses/mit-license.php
     z-index: 2;
 }
  
- /** footer **/
- 
+ /** footer  buscar iniciativas**/
 #buscador {
     background: none repeat scroll 0 0 #eee;
     bottom: 0;
     color: #8a358d;
-    font: 28px 'futuralightregular';
     height: 55px;
     left: 0;
     position: fixed;
@@ -49,8 +46,14 @@ License URI:        http://www.opensource.org/licenses/mit-license.php
     height: 55px;
     left: 0;
     overflow: hidden;
+    padding: 10px;
     position: relative;
     top: 0;
     width: 100%;
     z-index: 12;
+}
+ h3.buscar-iniciativa{
+    color: #8a358d;
+    font-family:'futuralightregular';
+    font-size:28px;   
 }
