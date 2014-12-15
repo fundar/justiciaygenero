@@ -3,8 +3,12 @@
 Template Name: Full Width
 */
 get_header(); ?>
-<div class="row">
-	98'998
+<div class="parallax_slider_outer first-section element-in-view" style="height: 862px; margin-top:0px;background:#f4f4f4;">
+	<div class="small-12 large-12 columns" role="main">
+	Nube/ Mapa contenido
+	9eiwjtijew8i9thj8r4
+	eiwjtuitr
+	</div>
 </div>
 <div class="row">
 	<div class="small-12 large-12 columns" role="main">

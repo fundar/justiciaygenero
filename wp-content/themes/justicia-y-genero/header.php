@@ -30,16 +30,20 @@
 		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?php echo get_stylesheet_directory_uri() ; ?>/assets/img/icons/apple-touch-icon-72x72-precomposed.png">
 		<link rel="apple-touch-icon-precomposed" href="<?php echo get_stylesheet_directory_uri() ; ?>/assets/img/icons/apple-touch-icon-precomposed.png">
 		
-		<?php wp_head(); ?>
+	<?php wp_head(); ?>
 	</head>
-	<body <?php body_class(); ?>>
+	
+	<body data-responsive="1" data-smooth-scrolling="0" data-header-resize="1" <?php body_class(); ?>>
+	
 	<?php do_action('foundationPress_after_body'); ?>
+	
 	<div id="container" data-section="home">
 	<div class="off-canvas-wrap" data-offcanvas>
+	
 	<div class="inner-wrap">
 	
 	<?php do_action('foundationPress_layout_start'); ?>
-	
+<div id="header-outer">	
 	<nav class="tab-bar show-for-small-only">
 		<section class="left-small">
 			<a class="left-off-canvas-toggle menu-icon" href="#"><span></span></a>
@@ -53,7 +57,9 @@
 
 	<?php get_template_part('parts/off-canvas-menu'); ?>
 
+
 	<?php get_template_part('parts/top-bar'); ?>
 
+</div>
 <section class="container" role="document">
 	<?php do_action('foundationPress_after_header'); ?>

@@ -23,28 +23,65 @@ body {
     color: #141414 !important;
     font-family: 'futura_lt_btlight' !important;
 }
+body:after {
+    content: "five";
+    display: none;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
 
 #container {
     background: none repeat scroll 0 0 #fff;
     height: calc(100% - 55px);
     left: 0;
-    overflow-x: hidden;
-    overflow-y: auto;
+
     position: relative;
     top: 0;
     transition: margin-left 500ms cubic-bezier(0.19, 1, 0.22, 1) 300ms;
     width: 100%;
     z-index: 2;
 }
+#full-screen {
+  z-index: -999;
+  min-height: 100%;
+  min-width: 1024px;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: background-color 0.4s ease 0s, box-shadow 0.4s ease 0s, border-color 0.4s ease 0s;
+}
  /**header**/
+header#top {
+    position: relative;
+    width: 100%;
+    z-index: 9998;
+}
+
+#header-outer {
+    background-color: #fff;
+    left: 0;
+    overflow: visible !important;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9998;
+     padding-top: 28px;
+}
 .top-bar {
     background:#fff !important;
     height: 96px !important;
 }
 .top-bar-container, .tab-bar {
-    border-bottom: 1px solid rgba(6, 8, 8, 0.2);
-    box-shadow: 0 0 2px rgba(6, 8, 8, 0.25);
-    margin-bottom: 2rem;
+    border-bottom: 1px solid rgba(6, 8, 8, 0.15);
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.26);
+    margin-bottom: 0 !important;
 }
 .top-bar-container{
     background:#fff !important;
@@ -94,11 +131,32 @@ body {
     color: #444 !important;
     display: block;
     font-family: 'futuralightregular'!important;
-    font-size: 0.8125rem;
+    font-size: 0.8125em;
     font-weight: normal;
     padding: 12px 0 12px 15px;
     text-transform: uppercase !important;
     width: 100%;
+}
+/** home **/
+.parallax_slider_outer.first-section {
+    margin-bottom: -2px !important;
+    margin-top: -42px;
+    height:100%;
+    width:100%;
+    height:auto;
+    min-height:100%;
+}
+.full{position:absolute; top:0; left:0; width:100%;  min-height: 100%; height:auto;}
+
+#full-screen-background-image {
+  z-index: -999;
+  min-height: 100%;
+  min-width: 1024px;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
  /** footer  buscar iniciativas**/
 #buscador {
