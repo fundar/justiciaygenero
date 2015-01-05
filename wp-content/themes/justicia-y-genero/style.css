@@ -10,12 +10,43 @@ License URI:        http://www.opensource.org/licenses/mit-license.php
 */
 
 @import url("fonts/stylesheet.css");
+/**fixed paralax**/
+html, body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+#container {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    z-index: 2;
+}
+#header-outer {
+    background-color: #fff;
+    left: 0;
+    overflow: visible !important;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9998;
+
+}
+.html_header_top #header-outer {
+    position: fixed;
+}
+.top-bar-container {
+    clear: both;
+    position: relative;
+}
 /** general**/
 p {
+    
     font-family: 'futura_lt_btlight' !important;
     font-size: 1rem;
     font-weight: normal;
-    line-height: 1.6;
     margin-bottom: 1.25rem;
     text-rendering: optimizelegibility;
 }
@@ -28,24 +59,7 @@ body:after {
     display: none;
 }
 
-html, body {
-  height: 100%;
-  width: 100%;
-  padding: 0;
-  margin: 0;
-}
 
-#container {
-    background: none repeat scroll 0 0 #fff;
-    height: calc(100% - 55px);
-    left: 0;
-
-    position: relative;
-    top: 0;
-    transition: margin-left 500ms cubic-bezier(0.19, 1, 0.22, 1) 300ms;
-    width: 100%;
-    z-index: 2;
-}
 #full-screen {
   z-index: -999;
   min-height: 100%;
@@ -57,6 +71,49 @@ html, body {
   left: 0;
   transition: background-color 0.4s ease 0s, box-shadow 0.4s ease 0s, border-color 0.4s ease 0s;
 }
+.row2:before, .row2:after {
+    content: " ";
+    display: table;
+}
+.row2 {
+    margin: 0 auto;
+    max-width: 65.5rem;
+    width: 100%;
+}
+.row3:before, .row3:after {
+    content: " ";
+    display: table;
+}
+.row3 {
+    margin: 0 auto;
+    max-width: 67.5rem;
+    width: 100%;
+}
+.flex_column:after, .clearfix:after {
+    clear: both;
+}
+div .flex_column {
+    float: left;
+    min-height: 1px;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+}
+.ft-image {
+    border-radius: 3px;
+    margin-bottom: 6px;
+    overflow: hidden;
+}
+.avia-content-slider, .avia-content-slider-inner {
+    clear: both;
+    overflow: hidden;
+    position: relative;
+}
+.avia-content-slider .slide-image, .avia-content-slider .slide-image img {
+    border-radius: 3px;
+    display: block;
+    position: relative;
+}
  /**header**/
 header#top {
     position: relative;
@@ -64,22 +121,17 @@ header#top {
     z-index: 9998;
 }
 
-#header-outer {
-    background-color: #fff;
-    left: 0;
-    overflow: visible !important;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 9998;
-     padding-top: 28px;
+article {
+    display: block;
 }
+
 .top-bar {
     background:#fff !important;
     height: 96px !important;
 }
 .top-bar-container, .tab-bar {
-    border-bottom: 1px solid rgba(6, 8, 8, 0.15);
+    border
+    -bottom: 1px solid rgba(6, 8, 8, 0.15);
     box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.26);
     margin-bottom: 0 !important;
 }
@@ -137,7 +189,70 @@ header#top {
     text-transform: uppercase !important;
     width: 100%;
 }
+.top{
+    margin-top:40px;
+}
+#full-width{
+    width:100%;
+    display: table;
+}
+.white{
+    background:#fff;
+    padding-bottom: 40px;
+}
+.f9f9f9-div {
+    background: none repeat scroll 0 0 #f9f9f9;
+    padding-bottom: 40px;
+}
+.EDEDED-div {
+    background: none repeat scroll 0 0 #EDEDED;
+    padding-bottom: 40px;
+}
+.large-2 {
+    width: 19.9999%;
+}
 /** home **/
+.notas-relevantes {
+    background: none repeat scroll 0 0 #fff;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+    margin-bottom: 20px;
+    min-height: 240px;
+}
+.encabezados {
+    color: #141414;
+    display: block;
+    font: 28px 'futuralightregular';
+    margin: 20px 0 25px;
+    text-transform: uppercase;
+}
+.fecha {
+    color: #5d5d5d;
+    font: 10px 'futura_lt_btlight';
+    margin: 9px 0 8px;
+    text-transform: uppercase;
+}
+.cont-relevantes{
+    padding: 0 5px 10px 10px
+}
+p.resumen-notas {
+    color: #141414;
+    font: 0.9em/1.1 'futura_lt_btlight';
+    min-height: 65px;
+}
+.leerMas {
+    color: #14A59A;
+    display:block;
+    font: 0.9em/1.1 'futura_lt_btlight';
+    margin:4px 0 0;
+}
+    
+.sep-green{
+    background:rgba(20, 165, 154, 0.45);
+    height:1px;
+    width:55%;
+}
+
 .parallax_slider_outer.first-section {
     margin-bottom: -2px !important;
     margin-top: -42px;
@@ -157,6 +272,12 @@ header#top {
   position: fixed;
   top: 0;
   left: 0;
+}
+li.notas-box {
+    display: -moz-deck;
+    height: auto;
+    margin: 0 15px;
+    width: 16%;
 }
  /** footer  buscar iniciativas**/
 #buscador {
@@ -189,5 +310,13 @@ header#top {
  h3.buscar-iniciativa{
     color: #8a358d;
     font-family:'futuralightregular';
-    font-size:28px;   
+    font-size:28px;
+ }
+/** sidebar **/
+.pleca-titulosb {
+    border-left: 10px solid #8a358d;
+    height: 28px;
+    padding-left: 9px;
+    padding-top: 2px;
+    vertical-align: middle;
 }

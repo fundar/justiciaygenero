@@ -1,3 +1,4 @@
+
 <?php
 /*
 Author: Ole Fredrik Lie
@@ -30,3 +31,5 @@ require_once('library/enqueue-scripts.php');
 require_once('library/theme-support.php');
 
 ?>
+
+
